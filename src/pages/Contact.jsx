@@ -97,7 +97,7 @@ const Contact = () => {
                                 <MessageSquare className="info-icon" />
                                 <div>
                                     <h4>وسائل التواصل</h4>
-                                    <p>تابعنا على LinkedIn و YouTube</p>
+                                    <p>تابعنا على <a href="https://www.facebook.com/mat.Simulation.Hub/" target="_blank" rel="noreferrer" style={{ color: 'var(--accent-cyan)' }}>Facebook</a> و LinkedIn و YouTube</p>
                                 </div>
                             </div>
                             <div className="info-card">

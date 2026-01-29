@@ -39,9 +39,9 @@ function App() {
           <div className="container">
             <p>© 2026 Simulation Hub - Simulate. Understand. Innovate.</p>
             <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '20px' }}>
+              <a href="https://www.facebook.com/mat.Simulation.Hub/" target="_blank" rel="noreferrer">Facebook</a>
               <a href="#">LinkedIn</a>
               <a href="#">YouTube</a>
-              <a href="#">Twitter</a>
             </div>
           </div>
         </footer>
