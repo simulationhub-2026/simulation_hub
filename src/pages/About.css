@@ -1,0 +1,172 @@
+.about-page {
+    padding-top: 80px;
+}
+
+.about-header {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--primary-bg);
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.philosophy {
+    padding: var(--section-padding);
+    background: white;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.philosophy-text {
+    text-align: right;
+}
+
+.philosophy-text h2 {
+    font-size: 2.25rem;
+    margin-bottom: 24px;
+}
+
+.comparison {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comp-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 20px;
+    background: var(--primary-bg);
+    border-radius: 12px;
+    flex-direction: row-reverse;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.dot.red {
+    background: #ff4d4d;
+}
+
+.dot.green {
+    background: #2ecc71;
+}
+
+.comp-item h4 {
+    margin-bottom: 5px;
+}
+
+.philosophy-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abstract-gear {
+    width: 250px;
+    height: 250px;
+    background: var(--primary-blue);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: blob 10s infinite alternate;
+}
+
+@keyframes blob {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+.vision-mission {
+    padding: var(--section-padding);
+}
+
+.alternate-bg {
+    background-color: var(--primary-deep);
+    color: white;
+}
+
+.alternate-bg h2,
+.alternate-bg h3 {
+    color: white;
+}
+
+.card {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    text-align: right;
+}
+
+.card-icon {
+    margin-bottom: 20px;
+    color: var(--accent-cyan);
+}
+
+.audience {
+    padding: var(--section-padding);
+    background: white;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.audience-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+    background: var(--primary-bg);
+    border-radius: 15px;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .audience-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

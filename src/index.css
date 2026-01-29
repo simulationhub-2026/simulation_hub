@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Core Colors - New Tech Dark Theme */
+  --primary-bg: #000814;
+  /* Very Deep Blue/Black */
+  --primary-deep: #001d3d;
+  --primary-blue: #003566;
+  --accent-cyan: #00d1ff;
+  /* Glowing Blue from logo */
+  --accent-orange: #ffc300;
+  /* Yellow/Orange from logo */
+  --text-main: #e0e1dd;
+  /* Off-white for readability */
+  --text-muted: #8d99ae;
+  --text-light: #ffffff;
+
+  /* Surface Colors */
+  --surface-dark: #001d3d;
+  --surface-grid: rgba(0, 209, 255, 0.08);
+  /* Cyan grid */
+  --border-color: rgba(0, 209, 255, 0.15);
+
+  /* Typography */
+  --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing & Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --section-padding: 80px 5%;
+  --border-radius: 8px;
+
+  /* Grid Pattern */
+  --grid-size: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--primary-bg);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-deep);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Global Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.2);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+/* Simulation Hub - Grid Background */
+.blueprint-grid {
+  background-image:
+    linear-gradient(var(--surface-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--surface-grid) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+}

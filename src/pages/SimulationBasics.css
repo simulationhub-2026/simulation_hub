@@ -1,0 +1,68 @@
+.basics-page {
+    padding-top: 80px;
+}
+
+.basics-hero {
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.basics-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.topics-section {
+    padding: var(--section-padding);
+}
+
+.topic-card {
+    background: var(--surface-dark);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    text-align: right;
+    color: var(--text-main);
+}
+
+.topic-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-direction: row-reverse;
+}
+
+.topic-icon {
+    color: var(--primary-blue);
+    width: 32px;
+    height: 32px;
+}
+
+.topic-body p {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.topic-example {
+    background: var(--primary-bg);
+    padding: 15px;
+    border-right: 4px solid var(--accent-cyan);
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.cta-learning {
+    padding: 60px 0;
+    background: var(--primary-deep);
+    color: white;
+}
+
+.cta-learning h3 {
+    color: white;
+    margin-bottom: 25px;
+}

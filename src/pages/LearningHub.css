@@ -1,0 +1,144 @@
+.learning-page {
+    padding-top: 80px;
+}
+
+.learning-hero {
+    padding: 60px 0;
+    background: transparent;
+}
+
+.level-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.level-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 40px;
+    background: var(--surface-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    font-weight: 600;
+    color: var(--text-muted);
+    min-width: 180px;
+}
+
+.level-tab:hover {
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.level-tab.active {
+    background: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+    box-shadow: 0 10px 20px rgba(0, 51, 102, 0.15);
+}
+
+.level-content {
+    min-height: 400px;
+    margin-bottom: 80px;
+}
+
+.curriculum-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.curriculum-item {
+    background: var(--surface-dark);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row-reverse;
+    text-align: right;
+    transition: var(--transition-fast);
+    color: var(--text-main);
+}
+
+.curriculum-item:hover {
+    border-color: var(--accent-cyan);
+    transform: translateX(-5px);
+}
+
+.item-number {
+    width: 30px;
+    height: 30px;
+    background: var(--primary-bg);
+    color: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.item-text {
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.item-accent {
+    color: var(--accent-orange);
+    opacity: 0.5;
+}
+
+.case-grid {
+    margin-top: 40px;
+}
+
+.case-card {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.case-img-placeholder {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-cyan);
+}
+
+.case-info {
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.case-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .level-tabs {
+        flex-direction: column;
+    }
+
+    .case-card {
+        flex-direction: column;
+    }
+
+    .case-img-placeholder {
+        width: 100%;
+        height: 200px;
+    }
+}
