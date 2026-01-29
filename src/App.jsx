@@ -12,10 +12,8 @@ import Contact from './pages/Contact';
 import './index.css';
 
 function App() {
-  const basename = import.meta.env.DEV ? '/' : '/simulation_hub';
-
   return (
-    <Router basename={basename}>
+    <Router basename="/">
       <div className="app-wrapper" dir="rtl">
         <Navbar />
         <main>
