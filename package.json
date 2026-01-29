@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://USERNAME.github.io/simulation_hub",
+  "homepage": "https://simulationhub-2026.github.io/simulation_hub",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
